@@ -63,7 +63,7 @@ header {
 }
 
 .banner-content p {
-    font-size: clamp(0.9rem, 3vw, 1rem);
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
     color: rgba(255, 255, 255, 0.719);
     width: 90%;
     max-width: 500px;
@@ -91,6 +91,11 @@ header button {
     font-size: clamp(0.9rem, 3.5vw, 1.2rem);
     font-weight: 800;
     text-transform: uppercase;
+    transition: .3s;
+}
+header button:hover {
+    transition: .3s;
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -117,6 +122,9 @@ header button {
     padding: 0 5vw;
     width: 100%;
 }
+#course-content p {
+    max-width: 60%;
+}
 
 .module {
     display: flex;
@@ -124,7 +132,7 @@ header button {
     gap: 5px;
     background-color: #202729;
     padding: clamp(8px, 2vw, 12px) clamp(8px, 2vw, 20px);
-    width: 90%;
+    width: 30%;
     max-width: 600px;
     margin: clamp(10px, 2vw, 20px) auto;
     border: #125d7e solid 2px;
@@ -133,7 +141,12 @@ header button {
     font-size: clamp(0.7rem, 2.5vw, 0.8rem);
     box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
-
+.module span{
+    color: #33A8DB;
+}
+.modules-list{
+    width: 100%;
+}
 #transform-world {
     border-top: 2px solid #33A8DB;
     border-bottom: 2px solid #33A8DB;
@@ -154,7 +167,7 @@ header button {
 #transform-world p {
     font-size: clamp(1.2rem, 5.5vw, 2.2rem);
     font-weight: 800;
-    max-width: 80vw;
+    max-width: 27vw;
     color: white;
     text-shadow: #33A8DB 3px 2px 0px;
     text-wrap: wrap;
